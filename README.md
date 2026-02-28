@@ -6,8 +6,8 @@ On-chain verification and attestation for AI agents across 31 EVM chains.
 
 ### Agent SDKs
 
-- [MCP Server](https://www.npmjs.com/package/mcp-server-insumer) — 16 tools, published to the Official MCP Registry
-- [LangChain](https://pypi.org/project/langchain-insumer/) — Python toolkit with 6 verification tools
+- [MCP Server](https://www.npmjs.com/package/mcp-server-insumer) — 23 tools, published to the Official MCP Registry
+- [LangChain](https://pypi.org/project/langchain-insumer/) — 23 tools, PyPI
 - [OpenAPI Spec](https://insumermodel.com/openapi.yaml) — Full REST API documentation
 
 ### Links
