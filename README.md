@@ -22,5 +22,6 @@ Works across EVM (30 chains), Solana, and XRPL (trust-line tokens like RLUSD, US
 
 ### Links
 
+- [AI Agent Verification API](https://insumermodel.com/ai-agent-verification-api/) — Full guide: 32 chains, trust profiles, commerce, signatures
 - [Developers](https://insumermodel.com/developers/) — API keys, pricing, docs
 - [insumermodel.com](https://insumermodel.com)
