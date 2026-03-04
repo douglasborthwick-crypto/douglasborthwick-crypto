@@ -27,6 +27,7 @@ Returns an `insr_live_...` key instantly with 10 verification credits.
 
 - [MCP Server](https://www.npmjs.com/package/mcp-server-insumer) — 25 tools, Official MCP Registry
 - [LangChain](https://pypi.org/project/langchain-insumer/) — 25 tools, PyPI
+- [ElizaOS](https://www.npmjs.com/package/eliza-plugin-insumer) — 3 actions + dynamic provider, npm
 - [OpenAI GPT](https://chatgpt.com/g/g-699c5e43ce2481918b3f1e7f144c8a49-insumerapi-verify) — 25 actions, GPT Store
 - [OpenAPI Spec](https://insumermodel.com/openapi.yaml) — Full REST API documentation
 - [insumer-verify](https://www.npmjs.com/package/insumer-verify) — Client-side signature verification
