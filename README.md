@@ -8,6 +8,17 @@ A merchant calls `POST /v1/attest` with a wallet address and conditions. The API
 
 Works across EVM (30 chains), Solana, and XRPL (trust-line tokens like RLUSD, USDC, native XRP).
 
+### Get a Free API Key
+
+```bash
+curl -X POST \
+  https://us-central1-insumer-merchant.cloudfunctions.net/createDeveloperApiKey \
+  -H "Content-Type: application/json" \
+  -d '{"email": "you@example.com", "appName": "my-app", "tier": "free"}'
+```
+
+Returns an `insr_live_...` key instantly with 10 verification credits.
+
 ### Try It
 
 - [XRPL Live Demo](https://insumermodel.com/demos/xrpl/) — Run a real RLUSD trust-line attestation in the browser
