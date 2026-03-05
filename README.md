@@ -4,7 +4,7 @@ On-chain attestation infrastructure for commerce across 32 blockchains. ECDSA-si
 
 ### What It Does
 
-A merchant calls `POST /v1/attest` with a wallet address and conditions. The API evaluates on-chain state and returns a signed pass/fail attestation with `ledgerIndex`, `conditionHash`, `attestedAt`, and `expiresAt`. Anyone can verify the signature against the public key at `/.well-known/jwks.json`.
+A merchant calls `POST /v1/attest` with a wallet address and conditions. The API evaluates on-chain state and returns a signed pass/fail attestation with `id`, `pass`, `results` (per-condition booleans with `conditionHash`, `blockNumber`, `blockTimestamp`), `attestedAt`, and `expiresAt`. Anyone can verify the signature against the public key at `/.well-known/jwks.json`.
 
 Works across EVM (30 chains), Solana, and XRPL (trust-line tokens like RLUSD, USDC, native XRP).
 
