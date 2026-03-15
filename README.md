@@ -12,7 +12,7 @@ Works across EVM (30 chains), Solana, and XRPL (trust-line tokens like RLUSD, US
 
 ```bash
 curl -X POST \
-  https://us-central1-insumer-merchant.cloudfunctions.net/createDeveloperApiKey \
+  https://api.insumermodel.com/v1/keys/create \
   -H "Content-Type: application/json" \
   -d '{"email": "you@example.com", "appName": "my-app", "tier": "free"}'
 ```
