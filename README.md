@@ -1,12 +1,16 @@
+30 years on Wall Street — ran FX derivatives trading at Morgan Stanley (New York & London), ran the strategic trading desk at Merrill Lynch, ran LatAm FX trading at Standard Chartered, built the electronic FX business at TP-ICAP. Helped execute the [first SEC-registered security token IPO](https://www.intelligenthq.com/interview-with-douglas-borthwick-cmo-inx-limited-the-first-sec-registered-security-token-ipo/) ($85M) as CMO/CBO at INX Limited. Author of *The Insumer Model*, *Your Equity in Your Pocket*, *Bitcoin, Blockchain & Tokenization*, *Tokenized Tomorrow*, and *Bitcoin: The Capital Singularity*. Co-host of [Old Men, New Money](https://oldmennewmoney.com/) podcast. Carnegie Mellon University. Yale School of Management (financial engineering).
+
+CEO of [Skye Meta Corp.](https://skyemeta.com) and [TokenCapStack](https://tokencapstack.com). Now building wallet auth infrastructure.
+
 ## Building InsumerAPI
 
-On-chain attestation infrastructure for commerce across 32 blockchains. ECDSA-signed boolean proofs of wallet eligibility — token holdings, trust-line balances, NFT ownership, compliance credentials — without exposing raw balances.
+On-chain attestation infrastructure for commerce across 33 blockchains. ECDSA-signed boolean proofs of wallet eligibility — token holdings, trust-line balances, NFT ownership, compliance credentials — without exposing raw balances.
 
 ### What It Does
 
 A merchant calls `POST /v1/attest` with a wallet address and conditions. The API evaluates on-chain state and returns a signed pass/fail attestation with `id`, `pass`, `results` (per-condition booleans with `conditionHash`, `blockNumber`, `blockTimestamp`), `attestedAt`, and `expiresAt`. Anyone can verify the signature against the public key at `/.well-known/jwks.json`.
 
-Works across EVM (30 chains), Solana, and XRPL (trust-line tokens like RLUSD, USDC, native XRP).
+Works across EVM (30 chains), Solana, XRPL, and Bitcoin.
 
 ### Get a Free API Key
 
@@ -34,6 +38,6 @@ Returns an `insr_live_...` key instantly with 10 verification credits.
 
 ### Links
 
-- [AI Agent Verification API](https://insumermodel.com/ai-agent-verification-api/) — Full guide: 32 chains, trust profiles, commerce, signatures
+- [AI Agent Verification API](https://insumermodel.com/ai-agent-verification-api/) — Full guide: 33 chains, trust profiles, commerce, signatures
 - [Developers](https://insumermodel.com/developers/) — API keys, pricing, docs
 - [insumermodel.com](https://insumermodel.com)
