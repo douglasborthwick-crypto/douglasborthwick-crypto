@@ -4,7 +4,7 @@ CEO of [Skye Meta Corp.](https://skyemeta.com) and [TokenCapStack](https://token
 
 ## Building InsumerAPI
 
-Condition-based access infrastructure across 33 blockchains. Send a wallet and conditions, get a signed boolean. No secrets, no identity, no static credentials — access depends on what a wallet holds, right now.
+Condition-based access infrastructure across 38 blockchains. Send a wallet and conditions, get a signed boolean. No secrets, no identity, no static credentials — access depends on what a wallet holds, right now.
 
 Wallet auth is the implementation. [Condition-based access](https://insumermodel.com/blog/there-is-no-key.html) is the category.
 
@@ -40,7 +40,7 @@ Returns an `insr_live_...` key instantly with 10 verification credits.
 
 ### Links
 
-- [AI Agent Verification API](https://insumermodel.com/ai-agent-verification-api/) — Full guide: 33 chains, trust profiles, commerce, signatures
+- [AI Agent Verification API](https://insumermodel.com/ai-agent-verification-api/) — Full guide: 38 chains, trust profiles, commerce, signatures
 - [Developers](https://insumermodel.com/developers/) — API keys, pricing, docs
 - [There Is No Key](https://insumermodel.com/blog/there-is-no-key.html) — The condition-based access argument
 - [insumermodel.com](https://insumermodel.com)
