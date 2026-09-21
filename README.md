@@ -4,7 +4,7 @@ CEO of [Skye Meta Corp.](https://skyemeta.com) and [TokenCapStack](https://token
 
 ## Building InsumerAPI
 
-Condition-based access infrastructure across 38 blockchains. Send a wallet and conditions, get a signed boolean. No secrets, no identity, no static credentials — access depends on what a wallet holds, right now.
+Condition-based access infrastructure across 37 blockchains. Send a wallet and conditions, get a signed boolean. No secrets, no identity, no static credentials — access depends on what a wallet holds, right now.
 
 Wallet auth is the implementation. [Condition-based access](https://insumermodel.com/blog/there-is-no-key.html) is the category.
 
@@ -12,7 +12,7 @@ Wallet auth is the implementation. [Condition-based access](https://insumermodel
 
 A caller sends `POST /v1/attest` with a wallet address and conditions. The API evaluates on-chain state and returns a signed pass/fail attestation with `id`, `pass`, `results` (per-condition booleans with `conditionHash`, `blockNumber`, `blockTimestamp`), `attestedAt`, and `expiresAt`. Anyone can verify the signature against the public key at `/.well-known/jwks.json`.
 
-Works across EVM (30 chains), Solana, XRPL, and Bitcoin. Proven across commerce (SkyeWoo), content gating (SkyeGate), agent trust (AgentTalk), and API access control.
+Works across 31 EVM chains plus Solana, XRPL, Bitcoin, Tron, Stellar and Sui. Proven across commerce (SkyeWoo), content gating (SkyeGate), agent trust (AgentTalk), and API access control.
 
 ### Get a Free API Key
 
@@ -31,16 +31,16 @@ Returns an `insr_live_...` key instantly with 10 verification credits.
 
 ### Agent SDKs
 
-- [MCP Server](https://www.npmjs.com/package/mcp-server-insumer) — 26 tools, Official MCP Registry
+- [MCP Server](https://www.npmjs.com/package/mcp-server-insumer): 27 tools, Official MCP Registry
 - [LangChain](https://pypi.org/project/langchain-insumer/) — 26 tools, PyPI
-- [ElizaOS](https://www.npmjs.com/package/eliza-plugin-insumer) — 10 actions, npm
+- [ElizaOS](https://www.npmjs.com/package/@insumermodel/plugin-eliza): 10 actions, npm
 - [OpenAI GPT](https://chatgpt.com/g/g-699c5e43ce2481918b3f1e7f144c8a49-insumerapi-verify) — 26 actions, GPT Store
 - [OpenAPI Spec](https://insumermodel.com/openapi.yaml) — Full REST API documentation
 - [insumer-verify](https://www.npmjs.com/package/insumer-verify) — Client-side signature verification
 
 ### Links
 
-- [AI Agent Verification API](https://insumermodel.com/ai-agent-verification-api/) — Full guide: 38 chains, trust profiles, commerce, signatures
+- [AI Agent Verification API](https://insumermodel.com/ai-agent-verification-api/) — Full guide: 37 chains, trust profiles, commerce, signatures
 - [Developers](https://insumermodel.com/developers/) — API keys, pricing, docs
 - [There Is No Key](https://insumermodel.com/blog/there-is-no-key.html) — The condition-based access argument
 - [insumermodel.com](https://insumermodel.com)
