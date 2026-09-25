@@ -36,7 +36,7 @@ Returns an `insr_live_...` key instantly with 10 verification credits.
 - [ElizaOS](https://www.npmjs.com/package/@insumermodel/plugin-eliza): 10 actions, npm
 - [OpenAI GPT](https://chatgpt.com/g/g-699c5e43ce2481918b3f1e7f144c8a49-insumerapi-verify) — 26 actions, GPT Store
 - [OpenAPI Spec](https://insumermodel.com/openapi.yaml) — Full REST API documentation
-- [insumer-verify](https://www.npmjs.com/package/insumer-verify) — Client-side signature verification
+- [insumer-verify](https://www.npmjs.com/package/insumer-verify) — Client-side signature verification ([source](https://github.com/insumerapi/insumer-verify))
 
 ### Links
 
