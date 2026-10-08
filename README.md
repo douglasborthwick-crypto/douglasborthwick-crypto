@@ -14,7 +14,7 @@ Connect any MCP client to `https://api.insumermodel.com/mcp`. No install, no key
 
 ### What It Does
 
-A caller sends `POST /v1/attest` with a wallet address and up to 10 conditions: token balance, NFT ownership, EAS attestations, Farcaster, view calls, ratio rules, account code (plain key, EIP-7702 delegation, or contract) and agent standing (ERC-8004, ERC-7710). The API returns a signed pass/fail attestation with `id`, `pass`, `results` (per-condition booleans with `conditionHash`, `blockNumber`, `blockTimestamp`), `attestedAt` and `expiresAt`, never the balance. Each result carries an ECDSA signature and a post-quantum ML-DSA-65 companion; anyone can verify both against the public keys at `/.well-known/jwks.json`.
+A caller sends `POST /v1/attest` with a wallet address and up to 10 conditions: token balance, NFT ownership, EAS attestations, Farcaster, view calls, ratio rules, account code (plain key, EIP-7702 delegation, or contract) and agent standing (ERC-8004, ERC-7710). The API returns a signed pass/fail attestation with `id`, `pass`, `results` (per-condition booleans with `conditionHash`, `blockNumber`, `blockTimestamp`), `attestedAt` and `expiresAt`, never the balance. Each result is signed twice, ES256 and a post-quantum ML-DSA-65 signature; anyone can verify both against the public keys at `/.well-known/jwks.json`.
 
 [Wallet trust profiles](https://insumermodel.com/developers/trust/) (`POST /v1/trust`) return 155 signed presence checks across 27 chains in 10 dimensions, up to 176 with optional Solana, XRPL, Bitcoin and Tron wallets. No score, no opinion: signed evidence.
 
@@ -37,7 +37,7 @@ No key, no account. x402 moves the money. InsumerAPI checks the conditions. Call
 
 ### Verify the Signatures
 
-Every result verifies against the published public keys, offline with a saved copy of them. `insumer-verify` checks the ECDSA signature and its ML-DSA-65 post-quantum companion, condition hashes, block freshness and expiry. Same specification, same published test vectors, in JavaScript and Python.
+Every result verifies against the published public keys, offline with a saved copy of them. `insumer-verify` checks the ES256 signature and the post-quantum ML-DSA-65 signature, condition hashes, block freshness and expiry. Same specification, same published test vectors, in JavaScript and Python.
 
 ```bash
 npm install insumer-verify
